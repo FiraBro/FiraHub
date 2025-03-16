@@ -1,0 +1,55 @@
+.AllImage {
+  display: flex;
+  padding: 40px 10px;
+}
+.AllImage img {
+  width: 100px;
+  height: 400px;
+}
+.image1 {
+  width: 100%;
+  flex: 1 1;
+}
+.AllImage img:hover {
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width: 1200px) {
+  .AllImage {
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .AllImage {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .AllImage img {
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .AllImage img {
+    width: 150px;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .AllImage img {
+    width: 100px;
+  }
+  .hidden {
+    display: none;
+  }
+}

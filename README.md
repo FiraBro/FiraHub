@@ -1,0 +1,1 @@
+This is my personal portifolio I tryed to explain every thing about me

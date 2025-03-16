@@ -1,0 +1,140 @@
+/* Reset default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projectSection {
+  padding: 50px 200px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: #232323;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.cardLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cardLink:hover {
+  background-color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1500px) {
+  .projectSection {
+    padding: 50px 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projectSection {
+    padding: 40px 50px;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .projectGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectSection {
+    padding: 30px 20px;
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .projectCard {
+    padding: 15px;
+  }
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+  .cardDescription {
+    font-size: 0.9rem;
+  }
+  .cardLink {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectSection {
+    padding: 20px 10px;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .projectCard {
+    padding: 10px;
+  }
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  .cardDescription {
+    font-size: 0.85rem;
+  }
+}

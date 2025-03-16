@@ -1,0 +1,263 @@
+/* .section {
+  color: #fff;
+  height: auto;
+}
+
+.body {
+  padding: 20px 200px;
+}
+
+.image {
+  width: 250px;
+}
+
+.aboutpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.images {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 20%;
+  margin-left: 60px;
+}
+
+.images img {
+  border-radius: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.details h3 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.details span {
+  color: orange;
+}
+
+.details p {
+  color: #d9d8d8;
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.details button {
+  padding: 15px 25px;
+  margin: 10px 0;
+  background: linear-gradient(45deg, goldenrod, orange);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.details button:hover {
+  background: linear-gradient(45deg, orange, goldenrod);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.imgdetail {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1200px) {
+  .aboutpage {
+    margin-top: 100px;
+  }
+  .details h3 {
+    font-size: 2.5rem;
+  }
+  .body {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutpage {
+    margin-top: 80px;
+  }
+  .details h3 {
+    font-size: 2rem;
+  }
+  .body {
+    padding: 10px;
+  }
+  .details p {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+
+  .imgdetail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .details h3 {
+    font-size: 1.5rem;
+  }
+  .body {
+    padding: 10px 10px;
+  }
+  .details p {
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
+  .details button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+} */
+
+/* Existing CSS */
+.section {
+  color: #fff;
+  height: auto;
+}
+
+.body {
+  padding: 20px 200px;
+}
+
+.image {
+  width: 250px;
+}
+
+.aboutpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.images {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 20%;
+  margin-left: 60px;
+}
+
+.images img {
+  border-radius: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.details h3 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.details span {
+  color: orange;
+}
+
+.details p {
+  color: #d9d8d8;
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.details button {
+  padding: 15px 25px;
+  margin: 10px 0;
+  background: linear-gradient(45deg, goldenrod, orange);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.details button:hover {
+  background: linear-gradient(45deg, orange, goldenrod);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.imgdetail {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .aboutpage {
+    margin-top: 100px;
+  }
+  .details h3 {
+    font-size: 2.5rem;
+  }
+  .body {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutpage {
+    margin-top: 80px;
+  }
+  .details h3 {
+    font-size: 2rem;
+  }
+  .body {
+    padding: 10px;
+  }
+  .details p {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+
+  .imgdetail {
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    gap: 20px;
+  }
+
+  .images {
+    margin-left: 0; /* Remove left margin */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+}
+
+@media (max-width: 768px) {
+  .details h3 {
+    font-size: 1.5rem;
+  }
+  .body {
+    padding: 10px 10px;
+  }
+  .details p {
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
+  .details button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

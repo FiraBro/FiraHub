@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  color: #fff;
+}
+
+.home {
+  padding: 10px 200px;
+}
+
+.homeBox {
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 15px;
+  height: auto;
+  line-height: 35px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.textBox h3 {
+  font-size: 1rem;
+  animation: to-right 0.3s linear forwards;
+}
+
+.textBox h1 {
+  font-size: 5rem;
+  animation: to-right 0.5s linear forwards;
+}
+
+.textBox .position {
+  position: absolute;
+  left: 58%;
+  top: 10%;
+  font-size: 6.5rem;
+  font-weight: bolder;
+  line-height: 55px;
+  animation: to-right 0.7s linear forwards;
+}
+
+.textBox h2 span {
+  font-size: 5rem;
+}
+
+.textBox p {
+  font-size: 1.2rem;
+  color: lightgray;
+  animation: to-right 0.9s linear forwards;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.textBtn {
+  display: flex;
+  column-gap: 10px;
+}
+
+.textBtn a {
+  padding: 5px 35px;
+  font-size: 1rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  border-radius: 50px;
+  animation: to-right 1.1s linear forwards;
+}
+
+.socialLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialLink a {
+  background-color: #232323;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  font-size: larger;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+.socialLink a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@keyframes to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1500px) {
+  .home {
+    padding: 10px 100px;
+  }
+  .textBox h1 {
+    font-size: 5rem;
+  }
+  .textBox h2 {
+    font-size: 1.5rem;
+  }
+  .textBox .position {
+    font-size: 5rem;
+    position: absolute;
+    top: 9%;
+    left: 66%;
+  }
+  .textBox p {
+    padding-top: 75px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    padding: 20px;
+  }
+  .textBox h1 {
+    font-size: 4rem;
+  }
+  /* .textBox h2 {
+    font-size: 1.5rem;
+    animation: to-right 0.9s linear forwards;
+  } */
+  .textBtn a {
+    font-size: 0.9rem;
+    padding: 5px 20px;
+  }
+  .textBox .position {
+    font-size: 4rem;
+    position: absolute;
+    top: 7.5%;
+    left: 63%;
+  }
+  .textBox p {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  .homeBox {
+    padding-top: 50px;
+  }
+  .textBox h1 {
+    font-size: 3rem;
+    animation: to-right 0.6s linear forwards;
+  }
+  .textBox h2 {
+    font-size: 1.2rem;
+    animation: to-right 0.9s linear forwards;
+  }
+  .textBox .position {
+    font-size: 3rem;
+    position: absolute;
+    top: 9%;
+    left: 63%;
+  }
+  .textBox h2 span {
+    font-size: 2.5rem;
+  }
+  .textBox p {
+    font-size: 1rem;
+    animation: to-right 1.2s linear forwards;
+    width: 100%;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 630px) {
+  .socialLink {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .socialLink a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .home {
+    padding: 10px;
+  }
+  .homeBox {
+    background-image: none;
+  }
+  .textBox {
+    width: 100%;
+  }
+  .textBox h1 {
+    font-size: 1.5rem;
+  }
+  .textBox .position {
+    font-size: 2rem;
+    position: absolute;
+    top: 4.5%;
+    left: 47%;
+  }
+  .textBox p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

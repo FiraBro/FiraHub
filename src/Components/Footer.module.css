@@ -1,0 +1,96 @@
+
+
+.footer {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  row-gap: 10px;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+}
+
+.footerhead {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  row-gap: 15px;
+  padding: 15px 0 40px 0;
+}
+
+.footerhead h1 {
+  font-size: 4rem; /* Large heading size */
+}
+
+.footerhead span {
+  font-size: 5rem; /* Large span size */
+  position: absolute; /* Positioning for decorative text */
+  right: 25%;
+  bottom: 13%;
+  /* padding: 40px 0; */
+}
+
+.footerhead p {
+  color: gray;
+  font-size: 1.2rem; /* Medium paragraph size */
+  line-height: 35px; /* Line height for readability */
+}
+
+.footerlink {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for layout */
+  align-items: start;
+  column-gap: 10px; /* Space between links */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  /* Large devices (desktops) */
+  .footerhead h1 {
+    font-size: 3rem; /* Reduce heading size on larger screens */
+  }
+  .footerhead span {
+    font-size: 4rem;
+    bottom: 15%;
+
+    /* Reduce span size on larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Medium devices (tablets) */
+  .footer {
+    padding: 20px; /* Add padding for better spacing */
+  }
+  .footerhead h1 {
+    font-size: 2.5rem; /* Further reduce heading size for tablets */
+  }
+  .footerhead span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Small devices (phones) */
+  .footer {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+  .footerhead h1 {
+    font-size: 2rem; /* Smaller heading size for mobile */
+  }
+  .footerhead p {
+    font-size: 1rem; /* Smaller paragraph text for mobile */
+    line-height: 23px; /* Adjust line height for readability */
+  }
+  .footerlink {
+    flex-direction: flex; /* Stack links vertically on mobile */
+    column-gap: 10px; /* Space between links vertically */
+  }
+  .footerhead span {
+    font-size: 1.5rem;
+    bottom: 20%;
+  }
+}

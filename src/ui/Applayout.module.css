@@ -1,0 +1,34 @@
+/* .section {
+  background-color: #000;
+  color: #fff;
+}
+.body {
+  padding: 10px 0;
+}
+#name canvas {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+} */
+.section {
+  background-color: #000;
+  color: #fff;
+  position: relative; /* Add this to make the section a positioning context */
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+}
+
+.body {
+  padding: 10px 0;
+  position: relative; /* Add this to ensure content is above the particles */
+  z-index: 2; /* Ensure the content is above the particles */
+}
+
+#name canvas {
+  z-index: 1; /* Keep the particles below the content */
+  position: absolute; /* Absolute positioning for the particles */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

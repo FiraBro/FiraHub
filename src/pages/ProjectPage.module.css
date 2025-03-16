@@ -1,0 +1,86 @@
+.section {
+  color: #fff;
+  height: auto;
+}
+
+.body {
+  padding: 10px 400px; /* Adjust padding for larger screens */
+}
+
+.projectCenter {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center content */
+  row-gap: 50px; /* Space between sections */
+  margin-top: 100px; /* Space above project center */
+}
+
+.projectCenter h1 {
+  font-size: 2.5rem; /* Heading size */
+}
+
+.projectCenter p {
+  font-size: 1.2rem; /* Paragraph size */
+  line-height: 35px; /* Line height for readability */
+}
+
+.imageDetail {
+  display: flex;
+  flex-direction: column; /* Stack image details vertically */
+  row-gap: 20px; /* Space between details */
+}
+
+.imageDetail p {
+  font-size: 1.2rem; /* Paragraph size in image details */
+  color: #acacac; /* Color for secondary text */
+  line-height: 35px; /* Line height for readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  /* Large devices (desktops) */
+  .body {
+    padding: 10px 200px; /* Reduce padding on medium screens */
+  }
+  .projectCenter h1 {
+    font-size: 2rem; /* Smaller heading size on medium screens */
+  }
+  .projectCenter p {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Medium devices (tablets) */
+  .body {
+    padding: 10px; /* Full width padding on tablets */
+  }
+  .projectCenter h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+  .body {
+    padding: 10px 50px;
+  }
+  .projectCenter p {
+    font-size: 0.9rem;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Small devices (phones) */
+  .body {
+    padding: 10px 25px; /* Full width padding on mobile devices */
+  }
+  .projectCenter h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .projectCenter p {
+    font-size: 0.8rem; /* Smaller paragraph text for mobile */
+    line-height: 28px; /* Adjust line height for readability */
+  }
+}

@@ -1,0 +1,149 @@
+.section {
+  display: flex;
+  flex-direction:row; /* Stack items vertically by default */
+  align-items: center; /* Center items horizontally */
+  gap:30px;
+}
+
+.mytech {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  row-gap: 40px;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1200px; /* Limit max width */
+  border-left: 5px solid goldenrod;
+}
+
+.frontend {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 15px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.frontend:hover {
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  cursor: pointer;
+}
+
+.backend {
+  display: flex;
+  flex-direction: column; /* Stack backend items vertically */
+  row-gap: 10px; /* Space between items */
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  transition: background-color 0.3s ease-in;
+}
+
+.backend:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.backend h1,
+.tech h1 {
+  font-size: 2rem; /* Default heading size */
+}
+
+.backend span:nth-child(2) {
+  font-size: 2rem; /* Specific size for second span */
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.tech h1 {
+  color: orange;
+}
+
+.tech p {
+  color: gray;
+}
+
+.tech span:nth-child(1) {
+   color: #fff; 
+}
+
+.tech span:nth-child(2) {
+   color: orange; 
+}
+
+.aboutExpert {
+   display: flex; 
+   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+   column-gap:10px; 
+}
+
+.expert {
+   background-color: #2a2929; 
+   padding:15px; 
+   border-radius:50px; 
+   transition: background-color .3s ease-out; 
+   margin-bottom :10px; /* Space between expert items vertically */
+}
+
+.expert:hover {
+   background-color:#fff; 
+   color:#000; 
+   cursor:pointer; 
+}
+
+/* Responsive Styles */
+@media (max-width:1200px) { /* Large devices (desktops) */
+    .section {
+        flex-direction: column; /* Arrange items in a row */
+        /* justify-content: space-evenly;  */
+        /* align-items: center;
+        justify-content: center; */
+        row-gap: 20px;
+    }
+    
+    .mytech {
+        width: calc(100% - 20px); 
+    }
+    .frontend, .backend, .tech {
+        width: calc(38%); /* Set width for each section */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:992px) { /* Medium devices (tablets) */
+    .frontend, .backend, .tech {
+        width: calc(80%); /* Full width for each section */
+        margin-bottom: 15px;
+    }
+    
+
+}
+
+@media (max-width:768px) { /* Small devices (phones) */
+    .frontend h1,
+    .backend h1,
+    .tech h1 {
+        font-size:1.5rem; /* Smaller heading size on mobile */
+        margin-bottom: 10px;
+    }
+    
+    .expert {
+        padding :10px; /* Adjust padding for expert items on mobile */
+        margin-bottom :5px; /* Space between expert items vertically */
+    }
+   
+}
+
+/* Image Styling (if needed) */
+.image {
+    width :300px; /* Ensure proper unit is used here */
+    height :500px; 
+    border-radius: 10%;
+}

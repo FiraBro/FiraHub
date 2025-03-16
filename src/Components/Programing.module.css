@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+  display: flex;
+  /* column-gap: 10px; */
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 100px 0;
+  gap:50px;
+}
+.parent:hover .sliderParent{
+  animation-play-state: paused;
+}
+.sliderParent{
+  display: flex;
+  column-gap: 60px;
+  animation: 20s silder infinite linear;
+  align-items: center;
+}
+.sliderParent img{
+  height: 80px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+@keyframes silder {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}

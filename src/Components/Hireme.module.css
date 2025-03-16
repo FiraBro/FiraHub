@@ -1,0 +1,135 @@
+.holeHire {
+  display: flex;
+  flex-direction: row; /* Stack elements vertically on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.hireDetail {
+  background-color: rgb(24, 24, 24);
+  padding: 40px 80px;
+  border-left: 10px solid orangered;
+}
+
+.hireDetail:hover {
+  cursor: pointer;
+  border-left: 10px solid orange;
+}
+
+.holeHire p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.holeHire h1 {
+  font-size: 2.5rem;
+}
+
+.hireLink a {
+  background-color: rgb(24, 24, 24);
+  padding: 70px 90px;
+  border-left: 10px solid orange;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.hireLink a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .hireDetail {
+    padding: 30px;
+  }
+  .holeHire {
+    display: flex;
+    column-gap: 30px;
+    width: 100%;
+  }
+  .holeHire p {
+    font-size: 1.4rem; /* Slightly smaller font size */
+  }
+
+  .holeHire h1 {
+    font-size: 2.2rem; /* Slightly smaller heading */
+  }
+  .hireLink a {
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .holeHire {
+    flex-direction: column;
+    row-gap: 70px;
+  }
+
+  .hireDetail {
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .holeHire p {
+    font-size: 1.2rem; /* Smaller paragraph font size */
+  }
+
+  .holeHire h1 {
+    font-size: 2rem; /* Smaller heading size */
+  }
+
+  .hireLink a {
+    font-size: 1.3rem; /* Smaller link font size */
+    padding: 40px 80px; /* Further reduce padding */
+  }
+  .hireLink a:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .holeHire h1 {
+    font-size: 1.8rem; /* Smaller heading size for tablets */
+    text-align: center; /* Center the heading */
+  }
+
+  .holeHire p {
+    text-align: center; /* Center paragraph text */
+  }
+
+  .hireLink a {
+    padding: 40px 80px; /* Minimal padding on mobile */
+    width: auto; /* Allow link to fit content */
+  }
+}
+
+@media (max-width: 576px) {
+  .holeHire {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    margin-bottom: 80px;
+  }
+  .holeHire h1 {
+    font-size: 1.5rem; /* Smallest heading size for mobile */
+    margin-bottom: 5px; /* Minimal margin below heading */
+    /* padding: 10px; */
+  }
+
+  .holeHire p {
+    font-size: 1rem; /* Smallest paragraph font size for mobile */
+  }
+
+  .hireLink a {
+    font-size: 1.2rem; /* Smallest link font size for mobile */
+    padding: 20px 30px; /* Minimal padding on mobile */
+  }
+  .hireLink a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .hireDetail {
+    padding: 15px 30px;
+  }
+}
