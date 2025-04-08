@@ -1,7 +1,5 @@
 import React from "react";
-import Navigation from "../Components/Navigation";
 import { NavLink } from "react-router-dom";
-import Footer from "../Components/Footer";
 import style from "../pages/ProjectPage.module.css";
 import Button from "../Components/Button";
 
@@ -9,7 +7,6 @@ export default function Project() {
   return (
     <section className={style.section}>
       <div className={style.body}>
-        {/* <Navigation /> */}
         <Button />
         <div className={style.projectCenter}>
           <h1>FiraHub</h1>
