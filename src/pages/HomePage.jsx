@@ -1,7 +1,5 @@
 import React from "react";
-import Navigation from "../Components/Navigation";
 import style from "../pages/Home.module.css";
-import Footer from "../Components/Footer";
 import { NavLink } from "react-router-dom";
 import Programing from "../Components/Programing";
 import Work from "../Components/Work";
