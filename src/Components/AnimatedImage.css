@@ -1,0 +1,52 @@
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.animated-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* Rotate animation */
+.image-wrapper[data-animation-type="0"].active .animated-image {
+  transform: rotate(360deg);
+}
+
+/* Pulse animation */
+.image-wrapper[data-animation-type="1"].active .animated-image {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(51, 255, 87, 0.6);
+}
+
+/* Slide animation */
+.image-wrapper[data-animation-type="2"].active .animated-image {
+  transform: translateX(20px);
+}
+
+/* Bounce animation */
+.image-wrapper[data-animation-type="3"].active .animated-image {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
