@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import Programing from "../Components/Programing";
 import Work from "../Components/Work";
 import Hireme from "../Components/Hireme";
-import Images from "../Components/Images";
 import Projects from "../Components/projects";
 
 export default function Home() {
@@ -74,10 +73,9 @@ export default function Home() {
             GitHub
           </a>
         </div>
-        <Images />
+        <Projects />
         <Work />
         <Programing />
-        <Projects />
         <Hireme />
       </div>
     </section>
