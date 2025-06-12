@@ -9,9 +9,19 @@ export default function Project() {
         "A web application for ordering food online with real-time tracking and payment integration.",
     },
     {
-      title: "To-Do List",
+      title: "Elarning",
       description:
-        "A simple and intuitive task management app to organize daily activities with add, edit, and delete features.",
+        "A full-featured eLearning platform where users can explore, enroll in, and manage online courses with secure authentication, role-based access, and interactive content delivery.",
+    },
+    {
+      title: "Yoyo - Online Shoe Store",
+      description:
+        "A modern online shoe delivery platform where users can browse footwear by category, view product variants, add items to cart, place orders, and track deliveries — built with a secure and scalable full-stack architecture.",
+    },
+    {
+      title: "Admin Dashboard – Yoyo Brand",
+      description:
+        "A powerful admin dashboard for managing Yoyo's online shoe store. Includes features for product management, order tracking, user control, and real-time insights into sales and inventory, built with a responsive and intuitive UI.",
     },
     {
       title: "Expense Tracker",
