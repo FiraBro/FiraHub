@@ -2,100 +2,97 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  padding: 0 20px; /* Add some padding for smaller screens */
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .holeWork h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center; /* Center the heading */
+  text-align: center;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .parahole {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   border-top: 1px solid gray;
+  gap: 10px;
+  align-items: center;
 }
+
 .parahole:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 1200px) {
-  .holeWork h1 {
-    font-size: 2.5rem; /* Adjust heading size for larger screens */
-  }
-}
-
+/* Responsive adjustments */
 @media (max-width: 992px) {
   .holeWork {
-    padding: 10px;
-    width: 90%; /* Adjust width for medium screens */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-  }
-  .parahole p {
-    font-size: 1.2rem;
-    line-height: 23px;
+    padding: 0 15px;
   }
 
-  .holeWork h1 {
-    font-size: 2rem; /* Adjust heading size for medium screens */
+  .parahole {
+    padding: 15px;
+    gap: 8px;
   }
 }
 
 @media (max-width: 768px) {
-  .holeWork{
-    width: 100%;
-  }
-  .holeWork h1 {
-    font-size: 2rem; /* Smaller heading size for tablets */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Reduce margin below heading */
+  .parahole {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px 10px;
   }
 
-  .grid {
+  .parahole p {
+    line-height: 1.5;
     display: flex;
-    /* gap: 10px; */
-  }
-  .parahole {
-    padding: 20px;
-    font-size: 1rem;
-    line-height: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0;
   }
 }
 
 @media (max-width: 576px) {
+  .holeWork {
+    padding: 0 10px;
+    margin-bottom: 60px;
+  }
+
+  .parahole {
+    padding: 12px 8px;
+  }
 
   .holeWork h1 {
-    font-size: 1.2rem; /* Smallest heading size for mobile */
-    margin-bottom: 5px; /* Minimal margin below heading */
+    margin-bottom: 15px;
   }
+}
 
-  .grid {
-    width: 80%;
+/* Very small devices (phones, 400px and down) */
+@media (max-width: 400px) {
+  .parahole p {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-  }
-  .parahole {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    width: 100%;
-  }
-  .parahole p {
-    font-size: 1rem;
-    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
   }
 }
